@@ -1,4 +1,4 @@
- <script>
+
   var map = L.map('leaflet').setView([51.505, -0.09], 15);
   
   var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
@@ -16,4 +16,4 @@
    })
    
   
-  </script>
+
