@@ -1,27 +1,55 @@
 #leaflet{
-  margin:0;
-  padding:0;
-  height:500px;
-}
+  margin:0px;
+  padding:0px;
+  height:600px;
+  }
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	}
 
 .starter-template {
  
-}
+	}
 
+.row {
+	margin: 0px;
+	padding: 0px;
+	}
+
+
+/* TOP SLIDE */
 .row[role="top-slide"]{
 	width: 100%;
 	min-height: 700px;
 	background-color: aqua;
+	padding-top: 60px;
     }
     
+.expl {
+	margin-top: 66px;
+	font-size: 16px;
+	line-height: 1.5;
+}    
+    
+/* END TOP SLIDE*
+    
+/* MAP SLIDE */    
 .row[role="map"]{
 	width: 100%;
-	min-height: 500px;
+	min-height: 600px;
 	background-color: #333;
     }
+
+/* END MAP SLIDE */    
     
+/* FINISH SLIDE */    
 .row[role="finish"]{
 	width: 100%;
 	min-height: 500px;
 	background-color: #52c2ff;
     }    
+    
+/* END FINISH SLIDE */
