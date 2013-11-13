@@ -26,16 +26,16 @@ html, body {
 .row[role="top-slide"]{
 	width: 100%;
 	min-height: 700px;
-	padding-top: 60px;
+	padding-top: 120px;
 	padding-bottom: 33px;
 	background-color: #2edabc;
     }
     
 .expl {
-	margin-top: 66px;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #FFF;
+	margin-bottom: 66px;
 }    
 
 #logo {
@@ -49,7 +49,7 @@ html, body {
 .center-title {
 	text-align: center;
 	font-size: 48px;
-	margin-top: 55px;
+	margin-top: 66px;
 	}
     
 /* END TOP SLIDE*
