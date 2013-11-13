@@ -19,20 +19,32 @@ html, body {
 	padding: 0px;
 	}
 
+/* TAGS */
+
 
 /* TOP SLIDE */
 .row[role="top-slide"]{
 	width: 100%;
 	min-height: 700px;
-	background-color: aqua;
 	padding-top: 60px;
+	padding-bottom: 33px;
+	background-image: url('../images/subtle_dots.png');
     }
     
 .expl {
 	margin-top: 66px;
 	font-size: 16px;
 	line-height: 1.5;
+	color: #545454;
 }    
+
+#logo {
+	width: 250px;
+	height: 350px;
+	background-color: #ccc;
+	margin-bottom: 44px;
+	margin: 0 auto;
+}
     
 /* END TOP SLIDE*
     
