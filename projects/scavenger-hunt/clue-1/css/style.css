@@ -1,0 +1,27 @@
+#leaflet{
+  margin:0;
+  padding:0;
+  height:500px;
+}
+
+.starter-template {
+ 
+}
+
+.row[role="top-slide"]{
+	width: 100%;
+	min-height: 700px;
+	background-color: aqua;
+    }
+    
+.row[role="map"]{
+	width: 100%;
+	min-height: 500px;
+	background-color: #333;
+    }
+    
+.row[role="finish"]{
+	width: 100%;
+	min-height: 500px;
+	background-color: #52c2ff;
+    }    
