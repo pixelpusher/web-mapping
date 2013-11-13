@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css"/>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<body>
+
+<center><h1> Sound Check </h1></center>
+<p><center>Use the clues given to find your local supermarket and get bargaining!</p></center>
+
+<style>
+h1 { font-family: 'Viga', sans-serif;
+font-weight:400;
+}
+
+#map {
+margin:0;
+padding:0;
+height:400px;
+}
+#map {
+}
+
+audio {
+width:90%;
+
+}
+
+</style>
+
+<div id='map'></div>
+
+<div id='audio-controls'><center><audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio></center></div>
+
+<script>
+
+var map = 
+L.map('map').setView([51.505, -0.09], 15);
+
+var toner = 
+L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
+
+var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
+
+var openstreetmap = 
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+map.addLayer(openstreetmap);
+
+
+
+
+
+</script>
+
+</body>
+
+
+
