@@ -1,49 +1,59 @@
-#leaflet{
-  margin:0px;
-  padding:0px;
-  height:600px;
-  }
-
+#leaflet {
+	margin: 0px;
+	padding: 0px;
+	height: 600px;
+}
 html, body {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
-	}
-
-.container{
-	max-width: 450px;
 }
-
-
-
+p {
+	text-align: center;
+}
+.container {
+	max-width: 490px;
+}
 .starter-template {
- 
-	}
-
+}
 .row {
 	margin: 0px;
 	padding: 0px;
-	}
-
+}
 /* TAGS */
 
 
 /* TOP SLIDE */
-.row[role="top-slide"]{
+.row[role="top-slide"] {
 	width: 100%;
 	min-height: 700px;
 	padding-top: 120px;
 	padding-bottom: 33px;
 	background-color: #2edabc;
-    }
-    
+}
+.row[role="how-to-play"] {
+	color: #242424;
+	width: 100%;
+	min-height: 700px;
+	padding-top: 120px;
+	padding-bottom: 33px;
+	background-color: #F5F57A;
+	;
+}
+.row[role="start"] {
+	color: #FFF;
+	width: 100%;
+	min-height: 700px;
+	padding-top: 120px;
+	padding-bottom: 33px;
+	background-color: #E55656;
+}
 .expl {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #FFF;
 	margin-bottom: 66px;
-}    
-
+}
 #logo {
 	width: 225px;
 	height: 293px;
@@ -51,29 +61,30 @@ html, body {
 	margin: 0 auto;
 	background-image: url('../images/pin-lgo.png');
 }
-
 .center-title {
 	text-align: center;
 	font-size: 48px;
 	margin-top: 66px;
-	}
-    
+}
+/*transparent nav*/
+.navbar-fixed-top {
+	opacity: 0.95;
+}
 /* END TOP SLIDE*
     
 /* MAP SLIDE */    
-.row[role="map"]{
+.row[role="map"] {
 	width: 100%;
 	min-height: 600px;
 	background-color: #333;
-    }
-
+}
 /* END MAP SLIDE */    
     
 /* FINISH SLIDE */    
-.row[role="finish"]{
+.row[role="finish"] {
 	width: 100%;
 	min-height: 500px;
 	background-color: #52c2ff;
-    }    
+}    
     
 /* END FINISH SLIDE */
