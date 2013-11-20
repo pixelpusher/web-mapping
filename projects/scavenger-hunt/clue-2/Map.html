@@ -69,6 +69,8 @@ padding-top: 50px;
 
     <div class="container">
 
+<!--Start of clue 1-->
+
 <div class="row clue1">
  <div id="leaflet1" class="map"></div>
    <script>
@@ -84,7 +86,7 @@ map.addLayer(toner);
 
 //this shows the pop up on the marker and has it in place on default.
  var clue1 = L.circle([51.503724,0.004006])
- clue1.setRadius (100) 
+ clue1.setRadius (400) 
   clue1.addTo(map)
     .bindPopup('Its Here')
     .openPopup();
@@ -108,7 +110,9 @@ map.addLayer(toner);
 	<img src="http://placekitten.com/g/200/300" /> 
 </div>
 
-<!--end of row-->
+<!--end of row1-->
+
+<!--Start of clue 2-->
 
 <div class="row clue2">
  <div id="leaflet2" class="map"></div>
@@ -125,7 +129,7 @@ map.addLayer(toner);
 
 //this shows the pop up on the marker and has it in place on default.
  var clue1 = L.circle([51.503724,0.004006])
- clue1.setRadius (100) 
+ clue1.setRadius (250) 
   clue1.addTo(map)
     .bindPopup('Its Here')
     .openPopup();
@@ -148,6 +152,9 @@ map.addLayer(toner);
 
 	<img src="http://placekitten.com/g/200/300" /> 
 </div>
+
+<!-- end of row 2-->
+
 
 <div class="row clue3">
  <div id="leaflet3" class="map"></div>
@@ -188,6 +195,7 @@ map.addLayer(toner);
 	<img src="http://placekitten.com/g/200/300" /> 
 </div>
 
+<!--end of row 3-->
 
     </div><!-- /.container -->
 
