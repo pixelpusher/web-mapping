@@ -29,8 +29,7 @@ width:63%;
 <div id='map'></div>
 
 <div id='audio-controls'><center><audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
+  <source src="Tescos.ogg" type="audio/ogg">
 </audio></center></div>
 
 <script>
@@ -48,7 +47,19 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 
 map.addLayer(openstreetmap);
 
+window.markers = L.layerGroup().addTo(map)
 
+var clue1 = L.marker ( [51.50242503375894, 0.004312992095947266] )
+window.markers.addLayer(clue1)
+
+map.on('click', function (evt) {
+console.log('click' , evt)
+var marker = L.marker(evt.latlng)
+window.markers.addLayer(marker)
+} )
+//navigator.geolocation.getCurrentPosition( function() { 
+
+//console.log ("hello") } )
 
 
 
