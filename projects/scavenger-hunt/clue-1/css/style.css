@@ -78,6 +78,24 @@ p {
 	min-height: 600px;
 	background-color: #333;
 }
+
+.map {
+	width: 100%;
+	min-height: 600px;
+	background-color: #333;
+}
+
+.map.hot {
+	background-color: red;
+}
+
+.map.warm {
+	background-color: yellow;
+}
+
+.map.cold {
+	background-color: blue;
+}
 /* END MAP SLIDE */    
     
 /* FINISH SLIDE */    
