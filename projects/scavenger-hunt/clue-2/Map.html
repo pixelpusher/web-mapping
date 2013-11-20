@@ -9,7 +9,7 @@
     <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>  
     
     <style type="text/css">
-html, body, #leaflet{
+html, body, .map{
   margin:0;
   padding:0;
   height:300px;
@@ -23,7 +23,7 @@ padding-top: 50px;
 
     <title>Scavenger Hunt Group 2</title>
     
-
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
     
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
 
@@ -42,29 +42,8 @@ padding-top: 50px;
   
 
   <body>
-  
-    <div id="leaflet"></div>
 
-  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>  
-
-  <script>
-  var map = L.map('leaflet').setView([51.501875, 0.005493], 14);
-  
-  
-  var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-  var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
-  var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
-
-map.addLayer(toner);
-
-
-  L.marker([51.501875, 0.005493]).addTo(map)
-    .bindPopup('Its here!')
-    .openPopup();
-
-
-
-  </script>
+ 
 
 <!--Script for Bootstrap template-->
 
@@ -90,12 +69,129 @@ map.addLayer(toner);
 
     <div class="container">
 
+<div class="row clue1">
+ <div id="leaflet1" class="map"></div>
+   <script>
+   (function(){
+  var map = L.map('leaflet1').setView([51.501875, 0.005493], 15);
+  
+  
+  //var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
+  //var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
+
+map.addLayer(toner);
+
+//this shows the pop up on the marker and has it in place on default.
+ var clue1 = L.circle([51.503724,0.004006])
+ clue1.setRadius (100) 
+  clue1.addTo(map)
+    .bindPopup('Its Here')
+    .openPopup();
+})()
+  </script>
       <div class="starter-template">
         <h1>Scavenger Hunt Group 2</h1>
         <p class="lead">Follow the clue, find the sound</p>
       </div>
+      
+      <!-- Audio player-->
+
+	<audio controls>
+  		<source src="CoinPress.wav" type="audio/ogg">
+  		<source src="CoinPress.wav" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<!--End of audio player-->
+
+	<img src="http://placekitten.com/g/200/300" /> 
+</div>
+
+<!--end of row-->
+
+<div class="row clue2">
+ <div id="leaflet2" class="map"></div>
+   <script>
+  (function(){
+  var map = L.map('leaflet2').setView([51.501875, 0.005493], 15);
+  
+  
+  //var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
+  //var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
+
+map.addLayer(toner);
+
+//this shows the pop up on the marker and has it in place on default.
+ var clue1 = L.circle([51.503724,0.004006])
+ clue1.setRadius (100) 
+  clue1.addTo(map)
+    .bindPopup('Its Here')
+    .openPopup();
+})()
+  </script>
+      <div class="starter-template">
+        <h1>Scavenger Hunt Group 2</h1>
+        <p class="lead">Follow the clue, find the sound</p>
+      </div>
+      
+      <!-- Audio player-->
+
+	<audio controls>
+  		<source src="CoinPress.wav" type="audio/ogg">
+  		<source src="CoinPress.wav" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<!--End of audio player-->
+
+	<img src="http://placekitten.com/g/200/300" /> 
+</div>
+
+<div class="row clue3">
+ <div id="leaflet3" class="map"></div>
+   <script>
+   (function(){
+  var map = L.map('leaflet3').setView([51.501875, 0.005493], 15);
+  
+  
+  //var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
+  //var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
+
+map.addLayer(toner);
+
+//this shows the pop up on the marker and has it in place on default.
+ var clue1 = L.circle([51.503724,0.004006])
+ clue1.setRadius (100) 
+  clue1.addTo(map)
+    .bindPopup('Its Here')
+    .openPopup();
+})()
+  </script>
+      <div class="starter-template">
+        <h1>Scavenger Hunt Group 2</h1>
+        <p class="lead">Follow the clue, find the sound</p>
+      </div>
+      
+      <!-- Audio player-->
+
+	<audio controls>
+  		<source src="CoinPress.wav" type="audio/ogg">
+  		<source src="CoinPress.wav" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<!--End of audio player-->
+
+	<img src="http://placekitten.com/g/200/300" /> 
+</div>
+
 
     </div><!-- /.container -->
+
+
 
 
     <!-- Bootstrap core JavaScript
@@ -103,5 +199,9 @@ map.addLayer(toner);
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../../assets/js/jquery.js"></script>
     <script src="../../../lib/bootstrap30/js/bootstrap.min.js"></script>
+    
+      
+
+
   </body>
 </html>
