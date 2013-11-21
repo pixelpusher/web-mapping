@@ -12,7 +12,7 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 #pin  {
-	background-image: url("img/pin.png");
+	background-image: url("img/logo2.png");
 	text-indent: -9999px;
 	display:block;
 	height: 261px;
@@ -106,16 +106,15 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
 .marketing h2 {
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
+
 
 
 /* Featurettes
