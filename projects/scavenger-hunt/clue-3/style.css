@@ -11,12 +11,16 @@ body {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+#main_content {
+    
+}
+
 #pin  {
 	background-image: url("img/logo2.png");
 	text-indent: -9999px;
 	display:block;
-	height: 261px;
-	width: 378px;
+	height: 257px;
+	width: 381px;
 	position: absolute;
 	top: -400px;
 	left:520px;
