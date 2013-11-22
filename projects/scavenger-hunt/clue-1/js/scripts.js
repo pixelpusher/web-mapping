@@ -21,15 +21,15 @@
 
   var clue1Hot = L.circle(clue1,5,{fillColor:"#ff0000", color:"#ff0000"});
 
-  window.markers.addLayer(clue1marker);
+//	window.markers.addLayer(clue1marker);
   
-   window.markers.addLayer(clue1Cold);
+//	window.markers.addLayer(clue1Cold);
   
-   window.markers.addLayer(clue1Warm);
+//	window.markers.addLayer(clue1Warm);
 
-   window.markers.addLayer(clue1Warmer);
+//	window.markers.addLayer(clue1Warmer);
   
-   window.markers.addLayer(clue1Hot);
+//	window.markers.addLayer(clue1Hot);
   
 
    map.on('click', function (evt) {
