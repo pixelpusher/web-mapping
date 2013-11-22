@@ -1,5 +1,5 @@
 
-  var map = L.map('leaflet').setView([51.502098,0.005048], 14);
+  var map = L.map('leaflet').setView([51.30168,0.01542], 14);
   
   var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
   var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
@@ -9,9 +9,15 @@
 
   window.markers = L.layerGroup().addTo(map)
   
-  var clue1 = [51.502098,0.005048]
+  var clue1 = [51.30168,0.01542]
+
+
+// was originally var clue1marker = L.marker([51.502098,0.005048]); 
+//google maps station point +51°30'1.68", +0°0'15.42"
+
+  var clue1marker = L.marker([51.30168,0.01542]);
  
-  var clue1marker = L.marker([51.502098,0.005048]);
+  
  
   var clue1Cold = L.circle(clue1,500);
   
