@@ -86,15 +86,30 @@ p {
 }
 
 .map.hot {
+	background-image:url(../images/hot.png);
 	background-color: red;
+	background-repeat:no-repeat;
+	background-position:center top; 
 }
 
 .map.warm {
+	background-image:url(../images/warm.png);
 	background-color: yellow;
+	background-repeat:no-repeat;
+	background-position:center top; 
 }
-
+.map.warmer {
+	background-image:url(../images/warmer.png);
+	background-color: yellow;
+	background-repeat:no-repeat;
+	background-position:center top; 
+}
 .map.cold {
-	background-color: blue;
+	background-image:url(../images/cold.png);
+	background-color: #1eb1db;
+	background-repeat:no-repeat;
+	background-position:center top; 
+
 }
 /* END MAP SLIDE */    
     
