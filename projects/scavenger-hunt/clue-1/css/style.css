@@ -80,6 +80,9 @@ p {
 }
 
 .map {
+	background-image:url(../images/out-of-zone.png);
+	background-repeat:no-repeat;
+	background-position:center top; 
 	width: 100%;
 	min-height: 600px;
 	background-color: #333;
