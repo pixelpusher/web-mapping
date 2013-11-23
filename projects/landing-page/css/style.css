@@ -14,12 +14,18 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 }
+
+/*headings*/
+
 /* slides */
 
 #slide2, #slide3, #slide4 {
 	margin-top: -20px;
 	padding: 30px;
 }
+
+ 
+ 
 #slide1 {
 	color: #222;
 	width: 100%;
@@ -27,11 +33,15 @@ html, body {
 	padding-top: 200px;
 	background-image: url(../images/header.png);
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 1500px;
+	-moz-background-size: 1500px;
+	-o-background-size: 1500px;
+	background-size: 3000px;
+
 }
+
+
+
 #slide1 h1 {
 	font-size: 56px;
 	font-weight: bold;
@@ -46,7 +56,12 @@ html, body {
 	width: 100%;
 	min-height: 400px;
 	background-color: #1b7990;
-	text-align: left;
+}
+
+p{
+font-size: 27px;
+font-weight: lighter;
+line-height: 1.2;
 }
 
 #slide2 h1 {
@@ -64,10 +79,16 @@ html, body {
 #slide4 {
 	color: #FFF;
 	width: 100%;
-	min-height: 400px;
+	min-height: 750px;
 	background-color: #1b7990;
 }
 
+h2 span {
+	color: #000;
+	background-color:#fff;
+	padding: 3px 15px ;
+	border-radius: 30px;
+}
 
 #footer {
 	color: #FFF;
