@@ -1,13 +1,19 @@
 
   var map = L.map('leaflet').setView([51.5002981,0.0035886], 14);
-  
+
+// disables scrolling - will have to test usablility
+map.touchZoom.disable();
+map.scrollWheelZoom.disable();
+// removes double click to zoom 	map.doubleClickZoom.disable();
+
+
   var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
   var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
   var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
 
   map.addLayer(watercolor);
 
-  window.markers = L.layerGroup().addTo(map)
+// enables add marker to map  window.markers = L.layerGroup().addTo(map)
   
   var clue1 = [51.5002981,0.0035886]
  
