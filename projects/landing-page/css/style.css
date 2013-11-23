@@ -4,6 +4,14 @@ html, body {
 	width: 100%;
 	text-align: center;
 }
+a {
+color: #EBFF81;
+text-decoration: none;
+}
+
+a:hover{
+color: #F0FCB4;
+}
 .container {
 	max-width: 550px;
 }
@@ -77,11 +85,13 @@ h1 span, h2 span {
 	-moz-border-radius: 30px;
 	border-radius: 30px;}
 #footer {
+	font-size:20px;
+	font-weight:200;
 	color: #FFF;
 	width: 100%;
-	min-height: 50px;
-	padding: 50px;
-	background-color: #0b3d49;
+	padding: 40px;
+	height: 100px;
+	background-color: #292929;
 }
 #logo {
 	width: 225px;
