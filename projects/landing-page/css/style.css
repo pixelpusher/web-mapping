@@ -265,4 +265,8 @@ h1 span, h2 span {
 p {
 	text-align: left;
 }
+
+#footer {
+	height: 150px;
+}
 }
