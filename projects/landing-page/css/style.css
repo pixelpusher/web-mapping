@@ -54,7 +54,7 @@ html, body {
 #slide2 {
 	color: #fff;
 	width: 100%;
-	min-height: 400px;
+	min-height: 330px;
 	background-color: #1b7990;
 }
 
@@ -196,7 +196,7 @@ h2 span {
     overflow: hidden; /* will contain if #first is longer than #second */
 }
 #wrapper h1 {
-	font-size:66px;
+	font-size:46px;
 	margin-top: 175px;
 }
 #wrapper a {
