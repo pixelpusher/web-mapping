@@ -2,8 +2,8 @@
 <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 <body>
 
-<center><h1> Scavenger Hunt</h1></center>
-<p><center>Use the clues given and check out your sound!</p></center>
+<center><h1> Sound Check </h1></center>
+<p><center>Use the clues given to find your local supermarket!</p></center>
 
 <style>
 h1 { font-family: 'Viga', sans-serif;
@@ -50,47 +50,12 @@ map.addLayer(openstreetmap);
 window.markers = L.layerGroup().addTo(map)
 
 var clue1 = L.marker ( [51.50242503375894, 0.004312992095947266] )
-clue1.bindPopup("Nope");
+clue1.bindPopup("Clue 1 here");
 
 window.markers.addLayer(clue1)
 
-var clue2 = L.marker ( [51.50170314693997, 0.005654021952068433] )
+var clue2 = L.marker ( [51.50167673394306, 0.005744509344367543] )
 window.markers.addLayer(clue2)
-clue2.bindPopup("Not quite");
-
-var clue3 = L.marker ( [51.50148305379047, 0.006775222645956092] )
-window.markers.addLayer(clue3)
-clue3.bindPopup("Warmer");
-
-var clue4 = L.marker ( [51.50080865686802, 0.005688946657755878] )
-window.markers.addLayer(clue4)
-clue4.bindPopup("Hot Hot");
-
-var circle1 = L.circle([51.50242503375894, 0.004312992095947266], 50, {
-    color: 'transparent',
-    fillColor: '#0000FF',
-    fillOpacity: 0.7
-}).addTo(map);
-
-
-var circle = L.circle([51.50170314693997, 0.005654021952068433], 50, {
-    color: 'transparent',
-    fillColor: '#0000FF', 
-    fillOpacity: 0.5
-}).addTo(map);
-
-
-var circle = L.circle([51.50148305379047, 0.006775222645956092], 50, {
-    color: 'transparent',
-    fillColor: '#9966CC', 
-    fillOpacity: 0.5
-}).addTo(map);
-
-var circle = L.circle([51.50080865686802, 0.005688946657755878], 50, {
-    color: 'transparent',
-    fillColor: '#FF0000', 
-    fillOpacity: 0.5
-}).addTo(map);
 
 
 map.on('click', function (evt) {
