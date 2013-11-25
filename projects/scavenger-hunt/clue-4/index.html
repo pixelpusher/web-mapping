@@ -93,11 +93,6 @@ var circle = L.circle([51.50080865686802, 0.005688946657755878], 50, {
 }).addTo(map);
 
 
-map.on('click', function (evt) {
-console.log('click' , evt)
-var marker = L.marker(evt.latlng)
-window.markers.addLayer(marker)
-} ) 
 
 //navigator.geolocation.getCurrentPosition( function() { 
 
