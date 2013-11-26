@@ -33,8 +33,9 @@
         <!--        <li class="active"><a href="#home">Home</a></li> removed for now as current section isn't highlighted -->
         <li><a href="#home">Home</a></li>
         <li><a href="#how-to-play">How to play</a></li>
-        <li><a href="#start">Get Started</a></li>
         <li><a href="#clues">Clues</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#share">Share</a></li>
       </ul>
     </div>
     <!--/.nav-collapse --> 
@@ -45,21 +46,40 @@
 <div class="row" role="top-slide" id="home">
   <div class="col-md-6 col-md-offset-3 expl">
     <div id="logo"></div>
-    <h3 class="center-title">Hot & Cold</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia eros eu felis tincidunt, 
-      vel fringilla orci malesuada. Nunc in tempus enim. Sed scelerisque diam vel eros pharetra malesuada. 
-      Donec at ultricies velit. Quisque quis porta nibh. Fusce imperdiet suscipit dignissim. Vivamus auctor 
-      diam ac nulla feugiat, id sagittis lectus facilisis. </p>
+    <h3 class="center-title">Welcome</h3>
+    <h3>
+      <center>
+        To our scavenger hunt. Listen to the sound and find the location.
+      </center>
+    </h3>
   </div>
 </div>
 <div class="row" role="how-to-play" id="how-to-play">
   <div class="col-md-6 col-md-offset-3">
     <h3 class="center-title">How To Play</h3>
+    
+    
+    
+    
+    
+    
+    
+    
+    <ol>
+      <li>Listen to the sound</li>
+      <li>Use a smart phone.</li>
+      <li>Turn on location services (in settings)</li>
+      <li>Use 3G/4G</li>
+      <li>Use the Map</li>
+      <li>The closer you are to the location the warmer the background colour.
+        Cold: Warm: Warmer: Hot: </li>
+      <li>Follow the clues</li>
+    </ol>
   </div>
 </div>
-<div class="row" role="start" id="start">
+<div class="row" role="clues" id="clues">
   <div class="col-md-6 col-md-offset-3">
-    <h3 class="center-title">Get started</h3>
+    <h3 class="center-title">Clues</h3>
     <audio controls>
       <source src="sounds/audio.mp3" type="audio/mpeg">
       <source src="sounds/audio" type="audio/ogg">
@@ -69,21 +89,21 @@
 </div>
 
 <! -- map slide -->
-<div class="row map" role="map">
+<div class="row map" role="map" id="map">
   <div id="leaflet" style="margin: auto; margin-top: 100px; padding: 0px; height: 500px; "> </div>
   <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script> 
   <script src="js/scripts.js"></script> 
 </div>
 
 <! -- end slide -->
-<div class="row" role="finish">
+<div class="row" role="share" id="share">
 <div class="col-md-6 col-md-offset-3 expl">
   <h3 class="center-title">Well done!</h3>
-  <h2>Now that you've finished, share your photos on twitter! </h2>
+  <center><h2>Now that you've finished, make sure you share your photos on twitter! </h2>
+
   <br />
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia eros eu felis tincidunt, vel fringilla orci malesuada. Nunc in tempus enim. Sed scelerisque diam vel eros pharetra malesuada. Donec at ultricies velit. Quisque quis porta nibh. Fusce imperdiet suscipit dignissim. Vivamus auctor diam ac nulla feugiat, id sagittis lectus facilisis. <br />
-  <br />
-  <button type="button" class="btn btn-success">Post to twitter</button>
+  <a input type="button" value="Share on Twitter" onclick="window.open('http://twitter.com/home?status=I completed the Hot and Cold challenge!','popUpWindow','height=500,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');"><button type="button" class="btn btn-success">Post to twitter</button></a>
+  </center>
 </div>
 
 <!-- Bootstrap core JavaScript

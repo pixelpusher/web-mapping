@@ -12,7 +12,7 @@ p {
 	text-align: center;
 }
 .container {
-	max-width: 490px;
+	max-width: 555px;
 }
 .starter-template {
 }
@@ -40,7 +40,7 @@ p {
 	background-color: #F5F57A;
 	;
 }
-.row[role="start"] {
+.row[role="clues"] {
 	color: #FFF;
 	width: 100%;
 	min-height: 700px;
@@ -117,10 +117,18 @@ p {
 /* END MAP SLIDE */    
     
 /* FINISH SLIDE */    
-.row[role="finish"] {
+.row[role="share"] {
 	width: 100%;
-	min-height: 500px;
-	background-color: #52c2ff;
+	min-height: 300px;
+	background-color: #1eb1db;
 }    
+
+
     
 /* END FINISH SLIDE */
+
+
+#how-to-play li {
+	font-size: 24px;
+	font-weight:bold;
+}
