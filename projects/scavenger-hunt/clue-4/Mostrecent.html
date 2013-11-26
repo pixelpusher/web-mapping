@@ -1,0 +1,142 @@
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css"/>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<body>
+
+<body bgcolor="#ffffff">
+<body background="">
+
+
+<div style="height: 250px">
+    <center> <img src="thesoundtrack.png" alt=" " style="max-width: 100%;max-height: 100%" /> </center>
+
+<center> <h4> The aim of the game is to use the clues we have given to find where the sound clip below has come from. <br>Let's get going!
+<br>
+<h1> 1. Press Play. </h1>
+<style>
+h1 { font-family: 'century gothic', sans-serif;
+font-weight:200;
+}
+
+h4 { font-family: arial;
+font-weight:200;
+font-style:italic;
+}
+
+
+#map {
+margin: 0 auto;
+padding0;
+height:400px;
+width: 73%;
+}
+#map {
+}
+
+audio {
+width:73%;
+
+}
+
+
+</style>
+<br>
+<div id='audio-controls'><center><audio controls>
+  <source src="Tescos.wav" type="audio/ogg">
+</audio></center></div>
+
+<br>
+<h1> 2. Check out the clues. </h1>
+<div id='map'></div>
+
+
+
+<br>
+<br>
+<br>
+
+
+<h1> 3.Take a guess. </h1>
+
+<script>
+
+var map = 
+L.map('map').setView([51.50242503375894, 0.004312992095947266], 15);
+
+var toner = 
+L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
+
+var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
+
+var openstreetmap = 
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+map.addLayer(openstreetmap);
+
+window.markers = L.layerGroup().addTo(map)
+
+var clue1 = L.marker ( [51.50242503375894, 0.004312992095947266] )
+clue1.bindPopup("<b>The O2</b>, the home of entertainment.Not quite. ");
+
+window.markers.addLayer(clue1)
+
+var clue2 = L.marker ( [51.50170314693997, 0.005654021952068433] )
+window.markers.addLayer(clue2)
+clue2.bindPopup("<b>Ravensbourne</b>, home of the creatives. You're looking for somewhere a completely different.");
+
+var clue3 = L.marker ( [51.50148305379047, 0.006775222645956092] )
+window.markers.addLayer(clue3)
+clue3.bindPopup("<b>Cutters Lane</b> stay on track you're nearly there.");
+
+var clue4 = L.marker ( [51.50080865686802, 0.005688946657755878] )
+window.markers.addLayer(clue4)
+clue4.bindPopup("<b> Good 'ol Subway. You're real close.</b>");
+
+var circle1 = L.circle([51.50242503375894, 0.004312992095947266], 300, {
+    color: 'transparent',
+    fillColor: '#FFF009',
+    fillOpacity: 0.8
+}).addTo(map);
+circle1.bindPopup("Your sound is located somewhere in this area.");
+
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("Out of range" + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
+
+
+//navigator.geolocation.getCurrentPosition( function() { 
+
+//console.log ("hello") } )
+
+
+
+</script>
+
+<div id="container" style="width:1400px">
+
+<div id="header" style="background-color:#FFA500;width:1400px">
+
+
+</div></div>
+
+
+
+<form name="input" action="html_form_action.asp" method="get">
+<input type="text" name="user">
+<input type="submit" value="Submit">
+</form>
+
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">©BTMJS</div>
+
+</div>
+
+</body>
+
+
