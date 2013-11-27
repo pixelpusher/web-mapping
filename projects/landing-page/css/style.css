@@ -5,12 +5,11 @@ html, body {
 	text-align: center;
 }
 a {
-color: #EBFF81;
-text-decoration: none;
+	color: #EBFF81;
+	text-decoration: none;
 }
-
-a:hover{
-color: #F0FCB4;
+a:hover {
+	color: #F0FCB4;
 }
 .container {
 	max-width: 550px;
@@ -85,10 +84,11 @@ h1 span, h2 span {
 	padding: 3px 15px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-	border-radius: 30px;}
+	border-radius: 30px;
+}
 #footer {
-	font-size:20px;
-	font-weight:200;
+	font-size: 20px;
+	font-weight: 200;
 	color: #FFF;
 	width: 100%;
 	padding: 40px;
@@ -238,13 +238,13 @@ h1 span, h2 span {
 	overflow: hidden;
 	background-color: #848383;
 }
-#first:hover{
+#first:hover {
 	background-color: #2edabc;
-} 
-#second:hover{
+}
+#second:hover {
 	background-color: #B9194C;
 }
-#third:hover{
+#third:hover {
 	background-color: #199DB6;
 }
 #fourth:hover {
@@ -279,7 +279,6 @@ h1 span, h2 span {
 p {
 	text-align: left;
 }
-
 #footer {
 	height: 150px;
 }
