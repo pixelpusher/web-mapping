@@ -2,37 +2,60 @@
 <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 <body>
 
-<body bgcolor="#6e6e6e">
-<center><img border="0" src="Scavengerhunt.jpg"></center>
-<p><center><img border="0" src="subtitle.jpg"></p></center>
+<body bgcolor="#ffffff">
+<body background="">
 
 
+<div style="height: 250px">
+    <center> <img src="thesoundtrack.png" alt=" " style="max-width: 100%;max-height: 100%" /> </center>
+
+<center> <h4> The aim of the game is to use the clues we have given to find where the sound clip below has come from. <br>Let's get going!
+<br>
+<h1> 1. Press Play. </h1>
 <style>
-h1 { font-family: 'Viga', sans-serif;
-font-weight:400;
+h1 { font-family: 'century gothic', sans-serif;
+font-weight:200;
 }
+
+h4 { font-family: arial;
+font-weight:200;
+font-style:italic;
+}
+
 
 #map {
 margin: 0 auto;
 padding0;
 height:400px;
-width: 63%;
+width: 73%;
 }
 #map {
 }
 
 audio {
-width:63%;
+width:73%;
 
 }
 
+
 </style>
-
-<div id='map'></div>
-
+<br>
 <div id='audio-controls'><center><audio controls>
   <source src="Tescos.wav" type="audio/ogg">
 </audio></center></div>
+
+<br>
+<h1> 2. Check out the clues. </h1>
+<div id='map'></div>
+
+
+
+<br>
+<br>
+<br>
+
+
+<h1> 3.Take a guess. </h1>
 
 <script>
 
@@ -52,48 +75,39 @@ map.addLayer(openstreetmap);
 window.markers = L.layerGroup().addTo(map)
 
 var clue1 = L.marker ( [51.50242503375894, 0.004312992095947266] )
-clue1.bindPopup("Nope");
+clue1.bindPopup("<b>The O2</b>, the home of entertainment.Not quite. ");
 
 window.markers.addLayer(clue1)
 
 var clue2 = L.marker ( [51.50170314693997, 0.005654021952068433] )
 window.markers.addLayer(clue2)
-clue2.bindPopup("Not quite");
+clue2.bindPopup("<b>Ravensbourne</b>, home of the creatives. You're looking for somewhere a completely different.");
 
 var clue3 = L.marker ( [51.50148305379047, 0.006775222645956092] )
 window.markers.addLayer(clue3)
-clue3.bindPopup("Warmer");
+clue3.bindPopup("<b>Cutters Lane</b> stay on track you're nearly there.");
 
 var clue4 = L.marker ( [51.50080865686802, 0.005688946657755878] )
 window.markers.addLayer(clue4)
-clue4.bindPopup("Hot Hot");
+clue4.bindPopup("<b> Good 'ol Subway. You're real close.</b>");
 
-var circle1 = L.circle([51.50242503375894, 0.004312992095947266], 50, {
+var circle1 = L.circle([51.50242503375894, 0.004312992095947266], 300, {
     color: 'transparent',
-    fillColor: '#0000FF',
-    fillOpacity: 0.7
+    fillColor: '#FFF009',
+    fillOpacity: 0.8
 }).addTo(map);
+circle1.bindPopup("Your sound is located somewhere in this area.");
 
+var popup = L.popup();
 
-var circle = L.circle([51.50170314693997, 0.005654021952068433], 50, {
-    color: 'transparent',
-    fillColor: '#0000FF', 
-    fillOpacity: 0.5
-}).addTo(map);
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("Out of range" + e.latlng.toString())
+        .openOn(map);
+}
 
-
-var circle = L.circle([51.50148305379047, 0.006775222645956092], 50, {
-    color: 'transparent',
-    fillColor: '#9966CC', 
-    fillOpacity: 0.5
-}).addTo(map);
-
-var circle = L.circle([51.50080865686802, 0.005688946657755878], 50, {
-    color: 'transparent',
-    fillColor: '#FF0000', 
-    fillOpacity: 0.5
-}).addTo(map);
-
+map.on('click', onMapClick);
 
 
 //navigator.geolocation.getCurrentPosition( function() { 
@@ -102,6 +116,42 @@ var circle = L.circle([51.50080865686802, 0.005688946657755878], 50, {
 
 
 
+</script>
+
+<div id="container" style="width:1400px">
+
+<div id="header" style="background-color:#FFA500;width:1400px">
+
+
+</div></div>
+
+
+
+<form name="input" action="" method="get">
+<input type="text" name="guess" id= "guess">
+<input type="button" value="guess" id= "guessbutton">
+</form>
+
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">©BTMJS</div>
+
+</div>
+
+<script> 
+//When they push the button 
+//add event to guessbutton
+var guessbutton = document.getElementById("guessbutton");
+guessbutton.addEventListener("click", function() {
+var guess = document.getElementById("guess");
+
+
+if ("tesco" == guess.value)
+{
+	alert ("well done, you have completed the challenge!");
+}
+ });
+
+//if Tesco is entered in guess, popup with correct answer. 
 </script>
 
 </body>
