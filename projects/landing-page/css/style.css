@@ -55,21 +55,23 @@ color: #F0FCB4;
 	color: #fff;
 	width: 100%;
 	min-height: 350px;
-	background-color: #1592B1;
+	background-color: #f0f0f1;
 }
 p {
 	font-size: 27px;
 	font-weight: lighter;
 	line-height: 1.2;
+	color: #818181;
 }
 #slide2 h1 {
 	text-align: center;
+	color: #4c4c4c;
 }
 #slide3 {
 	color: #FFF;
 	width: 100%;
 	min-height: 500px;
-	background-color: #166577;
+	background-color: #4c4c4c;
 }
 #slide4 {
 	color: #FFF;
@@ -91,7 +93,7 @@ h1 span, h2 span {
 	width: 100%;
 	padding: 40px;
 	height: 100px;
-	background-color: #166577;
+	background-color: #4c4c4c;
 }
 #logo {
 	width: 225px;
@@ -202,7 +204,7 @@ h1 span, h2 span {
 	background-size: cover;
 	background-position: center;
 	padding: 0 10px;
-	opacity: 0.8;
+	opacity: 0.9;
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
  -0-transition: all .2s ease;
@@ -218,22 +220,34 @@ h1 span, h2 span {
 	width: 50%;
 	height: 400px;
 	float: left;
-	background-color: #2edabc;
+	background-color: #bbbbbb;
 }
 #second {
 	height: 400px;
 	overflow: hidden;
-	background-color: #B9194C;
+	background-color: #a9a9a9;
 }
 #third {
 	width: 50%;
 	height: 400px;
 	float: left;
-	background-color: #199DB6;
+	background-color: #929292;
 }
 #fourth {
 	height: 400px;
 	overflow: hidden;
+	background-color: #848383;
+}
+#first:hover{
+	background-color: #2edabc;
+} 
+#second:hover{
+	background-color: #B9194C;
+}
+#third:hover{
+	background-color: #199DB6;
+}
+#fourth:hover {
 	background-color: #E7C126;
 }
 
