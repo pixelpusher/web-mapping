@@ -127,15 +127,32 @@ map.on('click', onMapClick);
 
 
 
-<form name="input" action="html_form_action.asp" method="get">
-<input type="text" name="user">
-<input type="submit" value="Submit">
+<form name="input" action="" method="get">
+<input type="text" name="guess" id= "guess">
+<input type="button" value="guess" id= "guessbutton">
 </form>
 
 
 <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">©BTMJS</div>
 
 </div>
+
+<script> 
+//When they push the button 
+//add event to guessbutton
+var guessbutton = document.getElementById("guessbutton");
+guessbutton.addEventListener("click", function() {
+var guess = document.getElementById("guess");
+
+
+if ("tesco" == guess.value)
+{
+	alert ("well done, you have completed the challenge!");
+}
+ });
+
+//if Tesco is entered in guess, popup with correct answer. 
+</script>
 
 </body>
 
