@@ -145,3 +145,50 @@ p {
 	font-size: 24px;
 	font-weight:bold;
 }
+
+/* ==|== Mobile Fixes ====================================================== */
+
+	* {
+	  /* prevent callout when holding tap on links (the native dialog that comes up) */
+	  -webkit-touch-callout: none; 
+
+	  /* prevent webkit from resizing text to fit */
+	  -webkit-text-size-adjust: none; 
+
+	  /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	  /* prevent copy paste, to allow, change 'none' to 'text' */
+	  -webkit-user-select: none; 
+	}
+
+	// turn off webkit checkbox style, works for other inputs too
+	input[type="checkbox"] { -webkit-appearance: none; }
+
+	// placeholder text opacity
+	input::-webkit-input-placeholder { opacity: .8; }
+
+/* ==|== primary styles =====================================================
+	Author: 
+	========================================================================== */
+	
+
+	#audio_player { width:160px; height: 160px; position: relative; padding: 8px; margin: 100px auto; background: #f1f1f1; border-radius: 88px }
+	#audio_player .audio-background { width: 140px; height: 140px; border: solid 10px #e5e5e5; background: #f1f1f1; border-radius: 80px }
+	#audio_player .btn { cursor: pointer }
+		#audio_player .btn_play { display: block; width: 64px; height: 64px; position: absolute; top: 50%; left: 50%; margin-top: -32px; margin-left: -32px; text-indent: -900em; z-index: 10; background: url(../images/button_play.png) 19px top no-repeat; background-size: 42px 62px }
+		/* pause */
+		#audio_player .btn_play.playing { background: url(../images/button_pause.png) center no-repeat; background-size: 54px 59px }
+
+	#audio_player .audio-progress { position: absolute; width: 160px; height: 160px; top: 8px; left: 8px;}
+	#audio_player .audio-progress .audio-slice { position: absolute; width: 160px; height: 160px; clip: rect(0px,160px,160px,80px); }
+	#audio_player .audio-progress .audio-slice.gt50 { clip:rect(auto, auto, auto, auto); }
+	#audio_player .audio-progress .audio-slice .pie { border: 10px solid #276f84; position: absolute; width: 140px; height:140px; clip:rect(0,80px,160px,0);
+		-moz-border-radius:80px; -webkit-border-radius:80px; border-radius:80px;
+	}
+	#audio_player .audio-progress .audio-slice .pie.fill {
+		-moz-transform:rotate(180deg) !important;
+		-webkit-transform:rotate(180deg) !important;
+		-o-transform:rotate(180deg) !important;
+		transform:rotate(180deg) !important;
+	}

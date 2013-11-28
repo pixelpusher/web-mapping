@@ -1,0 +1,92 @@
+/* 
+Optional styling for bbplayer elements.
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+.bbplayer {
+  font: bold 16px/1.5 Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #898989;
+}
+
+.bb-play {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width:  32px;
+  border: 6px solid #CFCFCF;
+  border-radius: 50%; 
+  background: transparent; 
+  background-image: url('../images/play.png');
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  cursor: pointer;
+}
+
+.bb-playing {
+  vertical-align: middle;
+  background-image: url('../images/pause.png');
+  background-position: center center;
+}
+
+.bb-forward {
+  vertical-align: middle;
+  display: inline-block;
+  height: 32px;
+  width:  32px;
+  background: transparent;
+  background-image: url('../images/forward.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.bb-rewind {
+  vertical-align: middle;
+  display: inline-block;
+  height: 32px;
+  width:  32px;
+  background: transparent;
+  background-image: url('../images/rewind.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.bb-trackTime {
+  vertical-align: middle;
+  line-height: 32px;
+  display: inline-block;
+  height: 32px;
+}
+
+.bb-trackLength {
+  vertical-align: middle;
+  line-height: 32px;
+  display: inline-block;
+  height: 32px;
+}
+
+.bb-trackTitle {
+  vertical-align: middle;
+  line-height: 32px;
+  display: inline-block;
+  height: 32px;
+}
+
+.bb-debug {
+  height:10em;
+  width: 32em;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  overflow: auto;
+  font-weight: normal;
+  font-size: 14px/1.5;
+}
+
+.bb-label {
+  font-size: 14px/1.5;
+  font-weight: 300;
+  margin: 10px;
+}
