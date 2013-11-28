@@ -259,6 +259,9 @@ h1 span, h2 span {
 
  @media (max-width: 767px) {
 
+.container {
+	max-width: 100%;
+}
 .navbar-inverse .navbar-brand {
 	display:block;	 
 }
