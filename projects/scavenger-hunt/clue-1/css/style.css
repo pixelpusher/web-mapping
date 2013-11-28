@@ -34,16 +34,16 @@ p {
 #how-to-play {
 	color: #242424;
 	width: 100%;
-	min-height: 700px;
-	padding-top: 120px;
-	padding-bottom: 33px;
+	min-height: 600px;
+	padding-top: 50px;
+	padding-bottom: 40px;
 	background-color: #F5F57A;
 }
 #clues {
 	color: #FFF;
 	width: 100%;
 	min-height: 700px;
-	padding-top: 120px;
+	padding-top: 20px;
 	padding-bottom: 33px;
 	background-color: #E55656;
 }
@@ -53,8 +53,16 @@ p {
 	font-size: 18px;
 	line-height: 1.5;
 	color: #333;
-	margin-bottom: 66px;
+	margin-bottom: 22px;
 }
+
+.cluestext {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #fff;
+	margin-bottom: 33px;
+}
+
 #logo {
 	width: 225px;
 	height: 293px;
