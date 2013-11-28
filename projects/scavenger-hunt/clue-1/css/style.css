@@ -75,6 +75,9 @@ p {
 	font-size: 58px;
 	margin-top: 66px;
 }
+
+.white { color: #FFF; }
+
 /*transparent nav*/
 .navbar-fixed-top {
 	opacity: 0.95;
@@ -130,6 +133,7 @@ p {
 	width: 100%;
 	min-height: 300px;
 	background-color: #1eb1db;
+	color: #fff;
 }    
 
 
