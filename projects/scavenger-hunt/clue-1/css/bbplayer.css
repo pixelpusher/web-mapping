@@ -7,21 +7,21 @@ Optional styling for bbplayer elements.
   font: bold 16px/1.5 Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #898989;
   margin: 0 auto;
-  max-width: 125px;
+  max-width: 70px;
   width: 95%;
 }
 
 .bb-play {
   display: inline-block;
   vertical-align: middle;
-  height: 60px;
-  width:  60px;
+  height: 80px;
+  width:  80px;
   border: 6px solid #CFCFCF;
   border-radius: 50%; 
   background: transparent; 
   background-image: url('../images/play.png');
   background-repeat: no-repeat;
-  background-position: 14px center;
+  background-position: 24px center;
   cursor: pointer;
 }
 
