@@ -12,7 +12,7 @@ a:hover {
 	color: #F0FCB4;
 }
 .container {
-	max-width: 550px;
+	max-width: 310px;
 }
 .slide-container {
 	text-align: center;
@@ -106,6 +106,8 @@ h1 span, h2 span {
 	opacity: 0.97;
 }
 .navbar-inverse {
+	font-size: 18px;
+	font-weight:200;
 	background-color: #FFFFFF;
 	border-color: #FFFFFF;
 	-webkit-box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.75);
@@ -113,6 +115,7 @@ h1 span, h2 span {
 	box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.75);
 }
 .navbar-inverse .navbar-brand {
+	display: none;
 	color: #333;
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
@@ -253,6 +256,13 @@ h1 span, h2 span {
 
 /*mobile*/
 
+
+ @media (max-width: 767px) {
+
+.navbar-inverse .navbar-brand {
+	display:block;	 
+}
+}
  @media (max-width: 700px) {
 #first, #second, #third, #fourth {
 	float: left;
