@@ -1,14 +1,23 @@
-#leaflet {
-	margin: 0px;
-	padding: 0px;
-	height: 600px;
-}
 html, body {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
 }
-p {
+#leaflet {
+	margin: 0px;
+	padding: 0px;
+	height: 600px;
+}
+.column-container{
+	margin: 80px 150px;
+}
+#leftcolumn {
+	width: 75%;
+	float: left
+}
+#rightcolumn {
+	width: 25%;
+	float: right
 }
 .container {
 	max-width: 555px;
@@ -42,7 +51,7 @@ p {
 #clues {
 	color: #FFF;
 	width: 100%;
-	min-height: 700px;
+	min-height: 200px;
 	padding-top: 20px;
 	padding-bottom: 33px;
 	background-color: #E55656;
@@ -130,10 +139,13 @@ p {
 	background-color: #1eb1db;
 	color: #fff;
 }
+.underline {
+	border-bottom: 3px solid #fff;
+}
 .btn-success {
 	font-size: 18px;
 	color: #2B2B2B;
-	font-weight:400;
+	font-weight: 400;
 	background-color: #E0E73C;
 	border-color: #4cae4c;
 	padding: 10px 20px;
@@ -142,12 +154,11 @@ p {
 	border-radius: 100px;
 	border: none;
 }
-.btn-success:hover {
+.btn-success:hover, .btn-success:active {
 	color: #2B2B2B;
 	background-color: #F5FC58;
 	border: none;
 }
-
 /* END FINISH SLIDE */
 
 
