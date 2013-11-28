@@ -20,7 +20,18 @@ html, body {
 	float: right
 }
 .container {
-	max-width: 555px;
+	max-width: 480px;
+}
+.navbar-inverse .navbar-brand {
+	display: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #ddd;
+	font-size: 16px;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+ -0-transition: all .2s ease;
+	transition: all .2s ease;
 }
 .starter-template {
 }
@@ -264,12 +275,18 @@ opacity: .8;
 	transform: rotate(180deg) !important;
 }
  @media (max-width: 767px) {
-.center-title{
+.container {
+	max-width: 100%;
+}
+.navbar-inverse .navbar-brand {
+	display: block;
+}
+.center-title {
 	font-size: 40px;
 	margin-top: 10px;
 }
 #clues {
-min-height: 0px;
+	min-height: 0px;
 }
 .column-container {
 	margin: 10px;
@@ -286,8 +303,7 @@ min-height: 0px;
 	font-size: 20px;
 	font-weight: 200;
 }
-
 .bbplayer {
-  margin: 10px auto 40px;
+	margin: 10px auto 40px;
 }
 }
