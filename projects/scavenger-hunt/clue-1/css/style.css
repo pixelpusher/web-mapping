@@ -8,7 +8,7 @@ html, body {
 	padding: 0px;
 	height: 600px;
 }
-.column-container{
+.column-container {
 	margin: 80px 150px;
 }
 #leftcolumn {
@@ -35,7 +35,7 @@ html, body {
 #top-slide {
 	color: #FFF;
 	width: 100%;
-	min-height: 700px;
+	min-height: 500px;
 	padding-top: 120px;
 	padding-bottom: 33px;
 	background-color: #2edabc;
@@ -48,10 +48,13 @@ html, body {
 	padding-bottom: 40px;
 	background-color: #F5F57A;
 }
+#how-to-play .center-title {
+	margin-bottom: 30px;
+}
 #clues {
 	color: #FFF;
 	width: 100%;
-	min-height: 200px;
+	min-height: 500px;
 	padding-top: 20px;
 	padding-bottom: 33px;
 	background-color: #E55656;
@@ -258,4 +261,17 @@ opacity: .8;
 	-webkit-transform: rotate(180deg) !important;
 	-o-transform: rotate(180deg) !important;
 	transform: rotate(180deg) !important;
+}
+ @media (max-width: 650px) {
+.column-container {
+	margin: 10px;
+}
+#leftcolumn {
+	width: 100%;
+	float: left
+}
+#rightcolumn {
+	width: 100%;
+	float: right
+}
 }
