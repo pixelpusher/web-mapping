@@ -9,7 +9,6 @@ html, body {
 	width: 100%;
 }
 p {
-	text-align: center;
 }
 .container {
 	max-width: 555px;
@@ -127,10 +126,28 @@ p {
 /* FINISH SLIDE */    
 #share {
 	width: 100%;
-	min-height: 300px;
+	min-height: 390px;
 	background-color: #1eb1db;
 	color: #fff;
 }
+.btn-success {
+	font-size: 18px;
+	color: #2B2B2B;
+	font-weight:400;
+	background-color: #E0E73C;
+	border-color: #4cae4c;
+	padding: 10px 20px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	border: none;
+}
+.btn-success:hover {
+	color: #2B2B2B;
+	background-color: #F5FC58;
+	border: none;
+}
+
 /* END FINISH SLIDE */
 
 
