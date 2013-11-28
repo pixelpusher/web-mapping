@@ -12,8 +12,19 @@ map.scrollWheelZoom.disable();
   var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
 
   map.addLayer(watercolor);
+  
+  // change marker icon 
+  
+var myIcon = L.icon({
+    iconUrl: 'images/icon.png',
+    iconRetinaUrl: 'images/icon@2x.png',
+    iconSize: [20, 20],
+    iconAnchor: [10, 10],
+    popupAnchor: [10, 10],
 
-// enables add marker to map  window.markers = L.layerGroup().addTo(map)
+});
+
+// disables marker creation on click // window.markers = L.layerGroup().addTo(map) 
   
   var clue1 = [51.5002981,0.0035886]
  
@@ -50,7 +61,7 @@ map.scrollWheelZoom.disable();
       position.coords.longitude
     ];
 
-    L.marker(latlng).addTo(map);
+    L.marker(latlng , {icon: myIcon}).addTo(map);
     
     map.panTo(latlng);
     
@@ -93,16 +104,3 @@ map.scrollWheelZoom.disable();
   navigator.geolocation.watchPosition(goto); 
   
   
-  // change marker icon 
-  
-  var greenIcon = L.icon({
-    iconUrl: '../images/marker.png',
-    shadowUrl: '../images/marker-shadow.png',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-
