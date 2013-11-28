@@ -24,7 +24,6 @@ Optional styling for bbplayer elements.
   background-position: 24px center;
   cursor: pointer;
 }
-
 .bb-playing {
   vertical-align: middle;
   background-image: url('../images/pause.png');
