@@ -11,11 +11,11 @@ html, body {
 .column-container {
 	margin: 80px 150px;
 }
-#leftcolumn {
+#leftcolumn3 {
 	width: 75%;
 	float: left
 }
-#rightcolumn {
+#rightcolumn3 {
 	width: 25%;
 	float: right
 }
@@ -44,7 +44,7 @@ html, body {
 	color: #242424;
 	width: 100%;
 	min-height: 600px;
-	padding-top: 50px;
+	padding-top: 20px;
 	padding-bottom: 40px;
 	background-color: #F5F57A;
 }
@@ -54,7 +54,7 @@ html, body {
 #clues {
 	color: #FFF;
 	width: 100%;
-	min-height: 500px;
+	min-height: 580px;
 	padding-top: 20px;
 	padding-bottom: 33px;
 	background-color: #E55656;
@@ -139,6 +139,7 @@ html, body {
 #share {
 	width: 100%;
 	min-height: 390px;
+	padding-top: 20px;
 	background-color: #1eb1db;
 	color: #fff;
 }
@@ -262,16 +263,31 @@ opacity: .8;
 	-o-transform: rotate(180deg) !important;
 	transform: rotate(180deg) !important;
 }
- @media (max-width: 650px) {
+ @media (max-width: 767px) {
+.center-title{
+	font-size: 40px;
+	margin-top: 10px;
+}
+#clues {
+min-height: 0px;
+}
 .column-container {
 	margin: 10px;
 }
-#leftcolumn {
+#leftcolumn3 {
 	width: 100%;
 	float: left
 }
-#rightcolumn {
+#rightcolumn3 {
 	width: 100%;
 	float: right
+}
+#clues p {
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.bbplayer {
+  margin: 10px auto 40px;
 }
 }

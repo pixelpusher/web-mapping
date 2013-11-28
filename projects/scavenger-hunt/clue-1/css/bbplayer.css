@@ -6,7 +6,7 @@ Optional styling for bbplayer elements.
 .bbplayer {
   font: bold 16px/1.5 Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #898989;
-  margin: 145px 10px;
+  margin: 50px 10px;
   max-width: 70px;
   width: 95%;
 }
