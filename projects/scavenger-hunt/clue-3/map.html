@@ -1,0 +1,114 @@
+<!-- MAP -->
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>  
+<style>
+#leaflet {
+	height: 100%;
+	width: 100%;
+}
+
+</style>
+<div id="leaflet"></div>
+<script>
+	//console.log("CONSOLE");
+	var map = L.map("leaflet");
+	map.setView([51.50082884380456, 0.00308990478515625], 16)
+	var matrix = L.tileLayer('http://b.tile.cloudmade.com/8ee2a50541944fb9bcedded5165f09d9/67367/256/{z}/{x}/{y}.png');
+	map.addLayer(matrix);
+
+
+	
+//This section is for putting down markers with the mouse
+//	window.markers = L.layerGroup().addTo(map)
+//	map.on('click', function (evt) {
+//		console.log('LOAD!', evt)
+//		var marker = L.marker(evt.latlng, {
+//			icon: L.icon
+//			({
+//				iconUrl: 'http://s16.postimg.org/4e157tmpt/marker.png'
+//					})
+//						})
+//		marker.bindPopup("You are here!")
+//		map.addLayer(marker)
+//	})
+
+//This is the code that checks to see if the marker is within the radius. It also displays a popup when the marker is.
+	var startLocation = [51.50016764414252, 0.0031328201293945312]
+	var soccer = [51.498524621630374, 0.00995635986328125]
+	var tesco = [51.500581729901995, 0.006072521209716796]
+	var starbucks = [51.50202432187146, 0.0042057037353515625]
+
+	var invisiblePin = L.icon({
+		iconUrl: 'http://i39.tinypic.com/16hiuza.png',
+	});
+
+	var startMarker = L.marker(startLocation, {icon: invisiblePin})
+	var soccerMarker = L.marker(soccer, {icon: invisiblePin})
+	var tescoMarker = L.marker(tesco, {icon: invisiblePin})
+	var starbucksMarker = L.marker(starbucks, {icon: invisiblePin})
+
+	var startCircle = L.circle(startLocation,80,{fillOpacity: 0, stroke:false, fillColor: 'red'})
+	var soccerCircle = L.circle(soccer,140,{fillOpacity: 0, stroke:false, fillColor: 'blue'})
+	var tescoCircle = L.circle(tesco,30,{fillOpacity: 0, stroke:false, fillColor: 'yellow'})
+	var starbucksCircle = L.circle(starbucks,30,{fillOpacity: 0, stroke:false, fillColor: 'white'})
+	var detectivePin = L.icon({
+		iconUrl: 'http://s16.postimg.org/4e157tmpt/marker.png',
+	});
+
+	var detective = L.marker([0,0], {icon: detectivePin}).addTo(map);
+	map.addLayer(detective)
+
+	startMarker.bindPopup("We have detected 3 familiar sounds from within the area, one of which our elusive cyber villain will use to broadcast the hypnotic signal. Your mission is to locate the sounds and identify the origin of the chosen sound of our cyber villain so we can neutralise the threat before it's too late!", '<iframe width="60px" height="60px" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122300004&amp;color=000000&amp;auto_play=true&amp;show_artwork=false"></iframe>', "Find the location of the above sound and await further instruction." )
+	soccerMarker.bindPopup("Good work locating the first sound. Your tracking skills are impressive but we still have more work to do. We believe the sound will be broadcast nearer to the O2 venue. ", '<iframe width="60px" height="60px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122300599&amp;color=000000&amp;auto_play=true&amp;show_artwork=false"></iframe>', "Head towards the O2 and locate the next sound.")
+	tescoMarker.bindPopup("Brilliant work! You're on your way to becoming a top agent! Our intel has verified the exact sound that the cyber villain will use to broadcast the mind control signal. Use your skills to locate the final sound and prevent the cyber attack.", '<iframe width="60px" height="60px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122301006&amp;color=000000&amp;auto_play=true&amp;show_artwork=false"></iframe>')
+	starbucksMarker.bindPopup("Congratulations! You have completed the mission and stopped the attack! Your help is much appreciated and we could sure use agents like you to aid in our mission to track down and capture this cyber villain once and for all! But not before a well deserved holiday. Once again congratulations agent!")
+
+	map.addLayer(startMarker)
+	map.addLayer(soccerMarker)
+	map.addLayer(tescoMarker)
+	map.addLayer(starbucksMarker)
+
+	map.addLayer(startCircle)
+	map.addLayer(soccerCircle)
+	map.addLayer(tescoCircle)
+	map.addLayer(starbucksCircle)
+
+
+	function goto(position){
+		var latlng = [
+		position.coords.latitude,
+		position.coords.longitude
+		];
+
+		detective.setLatLng(latlng);
+
+		console.log("gotPosition",latlng)
+
+		var isNearSoccer = soccerCircle.getBounds().contains(latlng)
+		var isNearTesco = tescoCircle.getBounds().contains(latlng)
+		var isNearStarbucks = starbucksCircle.getBounds().contains(latlng)
+
+		console.log("isNearSoccer",isNearSoccer)
+		if (isNearSoccer){
+			soccerMarker.openPopup()
+		}
+
+		console.log("isNearTesco",isNearTesco)
+		if (isNearTesco){
+			tescoMarker.openPopup()
+		}
+
+		console.log("isNearStarbucks",isNearStarbucks)
+		if (isNearStarbucks){
+			starbucksMarker.openPopup()
+			
+		}
+	}
+
+	navigator.geolocation.watchPosition(goto);
+
+
+
+
+</script>
+<audio id="audio" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122300004"></audio>
