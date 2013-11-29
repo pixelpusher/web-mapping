@@ -273,6 +273,9 @@ h1 span, h2 span {
 	height: 250px;
 	opacity: 1;
 }
+#second, #fourth{
+	height: 300px;
+}
 #wrapper h1 {
 	font-size: 46px;
 	margin-top: 40px;
