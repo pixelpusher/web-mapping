@@ -273,9 +273,7 @@ h1 span, h2 span {
 	height: 250px;
 	opacity: 1;
 }
-#second, #fourth{
-	height: 300px;
-}
+
 #wrapper h1 {
 	font-size: 46px;
 	margin-top: 40px;
@@ -298,4 +296,12 @@ p {
 #footer {
 	height: 150px;
 }
+}
+@media (max-width: 370px) {
+#second{
+padding-bottom: 330px}
+
+#fourth{
+padding-bottom: 330px}
+
 }
