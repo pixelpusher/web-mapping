@@ -47,9 +47,12 @@ html, body {
 	color: #FFF;
 	width: 100%;
 	min-height: 500px;
-	padding-top: 120px;
+	padding-top: 100px;
 	padding-bottom: 33px;
 	background-color: #2edabc;
+}
+#top-slide .center-title {
+	margin-top: 10px;
 }
 #how-to-play {
 	color: #242424;
@@ -71,13 +74,18 @@ html, body {
 	background-color: #E55656;
 }
 #clues p {
-	font-size: 30px
+	font-size: 30px;
+	text-align: justify;
+}
+.subheading{
+	margin-top: 20px;
+	text-align: center;
 }
 .expl {
 	font-size: 18px;
 	line-height: 1.5;
 	margin-bottom: 22px;
-	text-align: left;
+	text-align: justify;
 }
 .cluestext {
 	font-size: 18px;
@@ -284,6 +292,9 @@ opacity: .8;
 .center-title {
 	font-size: 40px;
 	margin-top: 10px;
+}
+.subheading{
+	text-align: justify;
 }
 #clues {
 	min-height: 0px;
