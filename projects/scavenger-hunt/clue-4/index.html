@@ -76,21 +76,21 @@ map.addLayer(openstreetmap);
 window.markers = L.layerGroup().addTo(map)
 
 var clue1 = L.marker ( [51.50242503375894, 0.004312992095947266] )
-clue1.bindPopup("<b>The O2</b>, the home of entertainment.Not quite. ");
+clue1.bindPopup("<b>The O2</b>, the home of entertainment and great restaurants. We're thinking fast food. ");
 
 window.markers.addLayer(clue1)
 
 var clue2 = L.marker ( [51.50170314693997, 0.005654021952068433] )
 window.markers.addLayer(clue2)
-clue2.bindPopup("<b>Ravensbourne</b>, home of the creatives. You're looking for somewhere a completely different.");
+clue2.bindPopup("<b>Ravensbourne</b>, home of the creatives. Home of the deals is more what you're looking for. ");
 
 var clue3 = L.marker ( [51.50148305379047, 0.006775222645956092] )
 window.markers.addLayer(clue3)
-clue3.bindPopup("<b>Cutters Lane</b> stay on track you're nearly there.");
+clue3.bindPopup("<b>Cutters Lane</b> stay on track now. This place is always full. ");
 
 var clue4 = L.marker ( [51.50080865686802, 0.005688946657755878] )
 window.markers.addLayer(clue4)
-clue4.bindPopup("<b> Good 'ol Subway. You're real close.</b>");
+clue4.bindPopup("<b> Good 'ol Subway... Fast food? Yes. Always full? Yes. Deals? Yes! The right destination? No. :( You are real close! </b>");
 
 var circle1 = L.circle([51.50242503375894, 0.004312992095947266], 300, {
     color: 'transparent',
