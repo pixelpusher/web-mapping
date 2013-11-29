@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="../../../assets/ico/favicon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
 <link rel="stylesheet" href="css/bbplayer.css"/>
 <title>Hot & Cold Interactive Map Game</title>
@@ -44,24 +44,32 @@
 
 <! -- firs slide -->
 <div class="row" role="top-slide" id="top-slide">
-  <div class="col-md-6 col-md-offset-3 expl">
-    <div id="logo"></div>
+  <div class="slide-container">
     <h3 class="center-title">Hot & Cold</h3>
-    <p class="subheading"> Welcome to our scavenger hunt. To begin, use a smartphone with location services turned on and 3G (4G if you're super cool). Also, make sure you are disconnected from Wi-Fi.</p>
+    <div class="column-container">
+      <div id="leftcolumn1">
+        <p class="subheading"> Welcome to our scavenger hunt. To begin, use a smartphone with location services turned on and 3G (4G if you're super cool). Also, make sure you are disconnected from Wi-Fi.</p>
+      </div>
+    </div>
+    <div id="rightcolumn1">
+      <div id="logo"></div>
+    </div>
   </div>
 </div>
-
 <!-- second slide -->
 <div class="row" role="how-to-play" id="how-to-play">
-  <div class="col-md-6 col-md-offset-3">
-    <h3 class="center-title">How to play</h3>
-    <p class="expl">Read the clues below and listen to the sound to help you identify where it came from. </p>
-    <p class="expl">The red dot on the map shows your current location. A prompt above the map will change according to how near you are to the destination. The closer you are, the warmer the colour of the background and the further away you are, the cooler the colour. If the background colour changes to red, you are within 5 meters of the sound's location.
-    <p class="expl">When you think you have found where the sound came from, take a photo of it and tweet it with #ravehotncold.</p>
+  <div class="slide-container">
+    <div class="col-md-6 col-md-offset-3">
+      <h3 class="center-title">How to play</h3>
+      <h3>Read the clues below and listen to the sound to help you identify where it came from. </h3>
+      <h3>The red dot on the map shows your current location. A prompt above the map will change according to how near you are to the destination. The closer you are, the warmer the colour of the background and the further away you are, the cooler the colour. If the background colour changes to red, you are within 5 meters of the sound's location.</h3>
+      <h3>When you think you have found where the sound came from, take a photo of it and tweet it with #ravehotncold.</h3>
+    </div>
   </div>
 </div>
+<!--third slide-->
 <div class="row" role="clues" id="clues">
-  <div>
+  <div class="slide-container">
     <h3 class="center-title">Clues</h3>
     <div class="column-container">
       <div id="leftcolumn3">
@@ -72,48 +80,50 @@
         <br />
       </div>
     </div>
-    <div id="rightcolumn3">
-      <div class="bbplayer"> 
-        <!--<span class="bb-rewind"></span>--><span class="bb-play"></span><!--<span class="bb-forward"></span>--> 
-        <!--  <span class="bb-trackTime">--:--</span> /
+  </div>
+  <div id="rightcolumn3">
+    <div class="bbplayer"> 
+      <!--<span class="bb-rewind"></span>--><span class="bb-play"></span><!--<span class="bb-forward"></span>--> 
+      <!--  <span class="bb-trackTime">--:--</span> /
      <span class="bb-trackLength">--:--</span>
       <span class="bb-trackTitle">&nbsp;</span>-->
-        <audio>
-          <source src="sounds/audio.ogg" type="audio/ogg"></source>
-          <source src="sounds/audio.mp3" type="audio/mpeg"></source>
-          HTML5 Audio Not Available </audio>
-      </div>
-      
-      <!--
+      <audio>
+        <source src="sounds/audio.ogg" type="audio/ogg"></source>
+        <source src="sounds/audio.mp3" type="audio/mpeg"></source>
+        HTML5 Audio Not Available </audio>
+    </div>
+    
+    <!--
     <audio controls>
       <source src="sounds/audio.mp3" type="audio/mpeg">
       <source src="sounds/audio" type="audio/ogg">
       <embed height="50" width="100" src="horse.mp3"> 
     </audio>--> 
-    </div>
   </div>
 </div>
+</div>
 
-<! -- map slide -->
+<!-- map slide -->
 <div class="row map" role="map" id="map">
   <div id="leaflet" style="margin: auto; margin-top: 100px; padding: 0px; height: 500px; "> </div>
   <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script> 
   <script src="js/scripts.js"></script> 
 </div>
 
-<! -- end slide -->
+<!-- last slide -->
 <div class="row" role="share" id="share">
-<div class="col-md-6 col-md-offset-3 expl">
-  <h3 class="center-title white">Well done!</h3>
-  <center>
-    <h2 class="white">Now that you've finished, make sure you share your photos on twitter using <span class="underline">#ravehotncold</span></h2>
-    <br />
-    <a href="http://twitter.com" target="_blank">
-    <button type="button" class="btn btn-success">Go to Twitter</button>
-    </a>
-  </center>
+<div class="slide-container">
+  <div class="col-md-6 col-md-offset-3 expl">
+    <h3 class="center-title white">Well done!</h3>
+    <center>
+      <h2 class="white">Now that you've finished, make sure you share your photos on twitter using <span class="underline">#ravehotncold</span></h2>
+      <br />
+      <a href="http://twitter.com" target="_blank">
+      <button type="button" class="btn btn-success">Go to Twitter</button>
+      </a>
+    </center>
+  </div>
 </div>
-
 <!-- Bootstrap core JavaScript
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
