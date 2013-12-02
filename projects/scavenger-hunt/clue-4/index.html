@@ -26,7 +26,7 @@ font-style:italic;
 
 #map {
 margin: 0 auto;
-padding0;
+padding: 0;
 height:400px;
 width: 73%;
 }
@@ -127,8 +127,8 @@ map.on('click', onMapClick);
 
 
 
-<form name="input" action="" method="get">
-<input type="text" name="guess" id= "guess">
+<form name="input" action="#" method="get" onsubmit="return checkGuess();">
+<input type="text" name="guess" id="guess">
 <input type="button" value="guess" id= "guessbutton">
 </form>
 
@@ -138,18 +138,28 @@ map.on('click', onMapClick);
 </div>
 
 <script> 
+
+function checkGuess() {
+	var guess = document.getElementById("guess");
+	
+	if (guess.value.toLowerCase().indexOf("tesco") !=-1 )
+	{
+		alert ("well done, you have completed the challenge!");
+	}
+	else
+		alert(guess.value + " is not correct!");	
+		
+	// needs to return a false value so page doesn't refresh
+	return false;
+}
+
 //When they push the button 
 //add event to guessbutton
+
 var guessbutton = document.getElementById("guessbutton");
-guessbutton.addEventListener("click", function() {
-var guess = document.getElementById("guess");
 
 
-if ("tesco" == guess.value)
-{
-	alert ("well done, you have completed the challenge!");
-}
- });
+guessbutton.addEventListener("click", checkGuess);
 
 //if Tesco is entered in guess, popup with correct answer. 
 </script>
